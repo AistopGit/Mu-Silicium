@@ -37,7 +37,7 @@
 [PcdsFixedAtBuild]
   # DDR Start Address & DDR RAM Size (2 GB)
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x40000000
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x7EA00000
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x277E9000
 
   # Device Maintainer
   gSiliciumPkgTokenSpaceGuid.PcdDeviceMaintainer|"AistopGit"
@@ -57,8 +57,8 @@
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Galaxy S4"
 
   # Simple FrameBuffer
-  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1920
-  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1080
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
   gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|32
 
 [Components]
@@ -67,13 +67,14 @@
   SiliciumPkg/Drivers/KeypadDeviceDxe/KeypadDeviceDxe.inf
 
 [PcdsDynamicDefault]
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1920
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1080
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1920
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|1080
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|135
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|101
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|135
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|101
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1920
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1080
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|1920
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1080
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|135
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|101
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|135
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|101
+
 
 !include E5410Pkg/E5410Pkg.dsc.inc

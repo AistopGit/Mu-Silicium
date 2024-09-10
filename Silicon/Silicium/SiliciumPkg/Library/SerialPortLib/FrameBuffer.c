@@ -138,7 +138,7 @@ VOID
 WriteFrameBuffer (CHAR8 Buffer)
 {
   CHAR8  *Pixels            = NULL;
-  BOOLEAN InterruptsEnabled = ArmGetInterruptState ();
+  BOOLEAN InterruptsEnabled = 0;//ArmGetInterruptState ();
 
 Print:
   if ((UINT8)Buffer > 127) {
@@ -181,6 +181,7 @@ Print:
 
 newline:
   MicroSecondDelay (PrintDelay);
+  PrintDelay = 0;
 
   CurrentPosition->y += SCALE_FACTOR;
   CurrentPosition->x  = 0;

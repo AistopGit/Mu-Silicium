@@ -14,7 +14,7 @@ SerialPortWrite (
   IN UINTN  NumberOfBytes)
 {
   UINT8 *CONST Final          = &Buffer[NumberOfBytes];
-  UINTN        InterruptState = ArmGetInterruptState ();
+  UINTN        InterruptState = 0;//ArmGetInterruptState ();
 
   // Disable Interrupts
   if (InterruptState) { ArmDisableInterrupts (); }

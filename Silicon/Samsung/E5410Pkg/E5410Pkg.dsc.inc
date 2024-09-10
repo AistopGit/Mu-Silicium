@@ -25,11 +25,11 @@
 
 [PcdsFixedAtBuild]
   # Timer
-  gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|26000000
-  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|29
-  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|30
-  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|27
-  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|26
+  gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|24000000
+  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|13
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|14
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|11
+  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|10
 
   # GIC
   gArmTokenSpaceGuid.PcdGicDistributorBase|0x10481000
@@ -54,7 +54,6 @@
   HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   SoCPlatformLib|E5410Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
-  SerialPortLib|E5410Pkg/Library/SerialPortLib/SerialPortLib.inf
   ExynosSpeedyLib|E5410Pkg/Library/ExynosSpeedyLib/ExynosSpeedyLib.inf
 
 [Components]
